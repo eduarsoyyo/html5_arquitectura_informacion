@@ -11,9 +11,10 @@
     <title>Voluntariado comedores</title>
   </head>
   <body>
-    
-    <main><!-- Contenido principal -->
-      <header><!-- Encabezado -->
+    <main></main>
+      <!-- Contenido principal -->
+      <header>
+        <!-- Encabezado -->
         <h1>Inscripción voluntariado - Festival Primavera 2025</h1>
         <img
           src="./assets/images/mmanjushri.webp"
@@ -27,7 +28,8 @@
         <p>Muchas gracias.</p>
         <p>Con amor desde el equipo de comedores.</p>
       </header>
-      <section><!-- Menu de navegación en un aside-->
+      <section>
+        <!-- Menu de navegación en un aside-->
         <h3>Secciones</h3>
         <aside>
           <nav>
@@ -39,21 +41,30 @@
           </nav>
         </aside>
       </section>
-      <section><!-- Registro de voluntarios -->
+      <section>
+        <!-- Registro de voluntarios -->
         <h3>Registro de voluntarios</h3>
         <form action="/" method="post">
-          <div><!-- Pregunta ¿puedes ayudar? -->
-            <p>¿Crees que podrías ayudar a servir las comidas con la Sangha española durante el Festival?</p>
-            <input type="radio" name="puedes_ayudar" id="puedes_ayudar">
-            <label for="puedes_ayudar">Si</label>
-            <input type="radio" name="puedes_ayudar" id="puedes_ayudar">
-            <label for="puedes_ayudar">No</label>
-            <input type="radio" name="puedes_ayudar" id="puedes_ayudar">
-            <label for="puedes_ayudar">Aún nolo sé, contestaré mas tarde</label>
-
+          <div>
+            <!-- Pregunta ¿puedes ayudar? -->
+            <p>
+              ¿Crees que podrías ayudar a servir las comidas con la Sangha
+              española durante el Festival?
+            </p>
+            <input type="radio" name="puedes_ayudar_si" id="puedes_ayudar_si" />
+            <label for="puedes_ayudar_si">Si</label>
+            <input type="radio" name="puedes_ayudar_no" id="puedes_ayudar_no" />
+            <label for="puedes_ayudar_no">No</label>
+            <input
+              type="radio"
+              name="puedes_ayudar_tal_vez"
+              id="puedes_ayudar_tal_vez"
+            />
+            <label for="puedes_ayudar_tal_vez">Aún nolo sé, contestaré mas tarde</label>
           </div>
-          <div><!-- Datos generales de los voluntarios -->
-            <p><h4>Datos generales</h4></p>
+          <div>
+            <!-- Datos generales de los voluntarios -->
+            <h4>Datos generales</h4>
             <p>Necesitamos algunos datos para poder planificarlo todo.</p>
             <input
               type="text"
@@ -65,7 +76,7 @@
             <input
               type="text"
               name="apellidos"
-              id=""
+              id="apellidos"
               placeholder="Apellidos"
               required
             />
@@ -76,7 +87,8 @@
               placeholder="Correo electrónico"
               required
             />
-            <select name="centro" id="centro">Seleciona tu centro
+            <label for="centro">Selecciona tu centro</label>
+            <select name="centro" id="centro">
               <option disabled selected>Selecciona un Centro</option>
               <option value="sevilla">KMC Sevilla</option>
               <option value="madrid">KMC Madrid</option>
@@ -85,9 +97,9 @@
               <option value="sin_centro_asignado">Sin Centro asignado</option>
               <option value="otro_pais">Otro Pais</option>
             </select>
-
           </div>
-          <div><!-- Datos del viaje -->
+          <div>
+            <!-- Datos del viaje -->
             <label for="fecha_llegada">Fecha llegada</label>
             <input
               type="date"
@@ -97,78 +109,118 @@
             />
             <!-- Para fecha llegada, suelen equivocarse y meter otro mes. Se Quiero meter una validación para limitarlo a 15 días antes de comenzar el festival y que no pueda ser superior a la finalizacion del festival -->
             <label for="fecha_salida">Fecha salida</label>
-            <input
-              type="date"
-              name="fecha_salida"
-              id="fecha_salida"
-              placeholder="Fecha salida"
-              required
-            />
+            <input type="date" name="fecha_salida" id="fecha_salida" required />
             <!-- Tambien se necesitaría una validación para que la fecha de salida no sea anterior al inicio del festival y  limitarlo a 15 días dspues de finalizar el festival -->
           </div>
-          
         </form>
       </section>
-      <section><!-- Guía para voluntarios -->
-      <h3>Guía para voluntarios</h3>
-      <div><!-- Información de seguridad alimentaria -->
-      <h4>Seguridad alimentaria</h4>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, optio modi. Beatae dolores corrupti autem, nemo perspiciatis enim nobis recusandae ducimus suscipit quidem velit quam? Quod rerum quia eligendi dolorum.</p>
-      <ul>
-        <li>Aspecto 1</li>
-        <li>Aspecto 2</li>
-        <li>Aspecto 3</li>
-        <li>Aspecto 4</li>
-        <li>Aspecto 5</li>
-      </ul>
-      <h5>Aceptación seguridad alimentaria</h5>
-      <input type="checkbox" name="acepta_Seguridad" id="acepta_Seguridad" checked>
-      <label for="acepta_Seguridad">He leido y acepto los aspectos relativos a seguridad alimentaria</label>
-    </div>
-    <div><!-- Información de sistema de trabajo -->
-      <h4>Sistema de trabajo</h4>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, optio modi. Beatae dolores corrupti autem, nemo perspiciatis enim nobis recusandae ducimus suscipit quidem velit quam? Quod rerum quia eligendi dolorum.</p>
-      <ol>
-        <li>Aspecto 1</li>
-        <li>Aspecto 2</li>
-        <li>Aspecto 3</li>
-        <li>Aspecto 4</li>
-        <li>Aspecto 5</li>
-      </ol>
-      <h5>Aceptación sistema de trabajo</h5>
-      <input type="checkbox" name="acepta_sistema_trabajo" id="acepta_sistema_trabajo" checked>
-      <label for="acepta_sistema_trabajo">He leido y acepto los aspectos relativos al sistema trabajo</label>
-    </div> <!-- mapa con su leyenda-->
-    <div>
-      <h3>Punto de reunión</h3>
-      <!-- Pregunta ¿puedes ayudar? -->
-        <p>¿Podrías asistir a la primera reunión de coordinación prevista para el dia 26 de mayo?</p>
-        <input type="radio" name="asistes_primera reunion" id="asistes_primera reunion">
-        <label for="asistes_primera reunion">Si</label>
-        <input type="radio" name="asistes_primera reunion" id="asistes_primera reunion">
-        <label for="asistes_primera reunion">No</label>
+      <section>
+        <!-- Guía para voluntarios -->
+        <h3>Guía para voluntarios</h3>
+        <div>
+          <!-- Información de seguridad alimentaria -->
+          <h4>Seguridad alimentaria</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
+            optio modi. Beatae dolores corrupti autem, nemo perspiciatis enim
+            nobis recusandae ducimus suscipit quidem velit quam? Quod rerum quia
+            eligendi dolorum.
+          </p>
+          <ul>
+            <li>Aspecto 1</li>
+            <li>Aspecto 2</li>
+            <li>Aspecto 3</li>
+            <li>Aspecto 4</li>
+            <li>Aspecto 5</li>
+          </ul>
+          <h5>Aceptación seguridad alimentaria</h5>
+          <input
+            type="checkbox"
+            name="acepta_Seguridad"
+            id="acepta_Seguridad"
+            checked
+          />
+          <label for="acepta_Seguridad"
+            >He leido y acepto los aspectos relativos a seguridad
+            alimentaria</label
+          >
+        </div>
+        <div>
+          <!-- Información de sistema de trabajo -->
+          <h4>Sistema de trabajo</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
+            optio modi. Beatae dolores corrupti autem, nemo perspiciatis enim
+            nobis recusandae ducimus suscipit quidem velit quam? Quod rerum quia
+            eligendi dolorum.
+          </p>
+          <ol>
+            <li>Aspecto 1</li>
+            <li>Aspecto 2</li>
+            <li>Aspecto 3</li>
+            <li>Aspecto 4</li>
+            <li>Aspecto 5</li>
+          </ol>
+          <h5>Aceptación sistema de trabajo</h5>
+          <input
+            type="checkbox"
+            name="acepta_sistema_trabajo"
+            id="acepta_sistema_trabajo"
+            checked
+          />
+          <label for="acepta_sistema_trabajo"
+            >He leido y acepto los aspectos relativos al sistema trabajo</label
+          >
+        </div>
+        <!-- mapa con su leyenda-->
+        <div>
+          <h3>Punto de reunión</h3>
+          <!-- Pregunta ¿puedes ayudar? -->
+          <p>
+            ¿Podrías asistir a la primera reunión de coordinación prevista para
+            el dia 26 de mayo?
+          </p>
+          <input
+            type="radio"
+            name="asistes_primera_reunion"
+            id="asistes_primera_reunion_si"
+          />
+          <label for="asistes_primera_reunion_si">Si</label>
 
+          <input
+            type="radio"
+            name="asistes_primera_reunion"
+            id="asistes_primera_reunion_no"
+          />
+          <label for="asistes_primera_reunion_no">No</label>
 
-      <!-- falta la leyendas-->
-      <img src="./assets/images/punto_encuentro.jpg" alt="Punto de encuentro para la primera reunión" height="200">
-
-
-   
-    </div>
+          <!-- falta la leyendas-->
+          <img
+            src="./assets/images/punto_encuentro.jpg"
+            alt="Punto de encuentro para la primera reunión"
+            height="200"
+          />
+        </div>
       </section>
-      <section><!-- Contacto -->
+      <section>
+        <!-- Contacto -->
         <h4>Contacto</h4>
-      <address>
-        <p><h4>Festivales Kadampa</h4></p>
-        <p><h5>Coordinación de voluntariado para los Centros de España</h5></p>
-        <p>voluntariado.kadampa@gmail.com</p>
-        <p>https://kadampafestivals.org</p>
-        <a href="https://www.instagram.com/nktfestival/">Instagram</a>
-      </address>
+        <address>
+          <h4>Festivales Kadampa</h4>
+          <h5>Coordinación de voluntariado para los Centros de España</h5>
+          <p>voluntariado.kadampa@gmail.com</p>
+          <p>https://kadampafestivals.org</p>
+          <a href="https://www.instagram.com/nktfestival/">Instagram</a>
+        </address>
       </section>
-      <footer><!-- footer -->
-        <p>&copy; 2024 NKT-IKBU. Todos los derechos reservados en todo el mundo.</p>
-        <a href="https://kadampafestivals.org/privacy-notice">Política de privacidad</a>
+      <footer>
+        <!-- footer -->
+        <p>
+          &copy; 2024 NKT-IKBU. Todos los derechos reservados en todo el mundo.
+        </p>
+        <a href="https://kadampafestivals.org/privacy-notice"
+          >Política de privacidad</a
+        >
       </footer>
     </main>
   </body>
